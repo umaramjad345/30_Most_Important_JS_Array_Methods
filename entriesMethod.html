@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Cheat Sheet - Part_1</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["apple", "banana", "cherry"];
+
+      // Get an iterator for key-value pairs using entries()
+      let iterator = fruits.entries();
+
+      // Iterate over the iterator and log the key-value pairs
+      for (let entry of iterator) {
+        console.log(entry);
+      }
+      // [0, 'apple']
+      // [1, "banana"]
+      // [2, "cherry"];
+    </script>
+  </body>
+</html>

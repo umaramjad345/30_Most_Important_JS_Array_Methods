@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Cheat Sheet - Part_1</title>
+  </head>
+  <body>
+    <script>
+      // When the depth is default i,e, 1
+      let nestedArray = [1, 2, [3, 4, [5, 6]]];
+
+      // Flatten the nested array using flat()
+      let flattenedArray1 = nestedArray.flat();
+      console.log(flattenedArray1); // Output: [1, 2, 3, 4, [5, 6]]
+
+      // When depth is 2
+      let deeplyNestedArray = [1, 2, [3, 4, [5, 6]]];
+
+      // Flatten the deeply nested array using flat() with a depth of 2
+      let flattenedArray2 = deeplyNestedArray.flat(2);
+      console.log(flattenedArray2); // Output: [1, 2, 3, 4, 5, 6]
+    </script>
+  </body>
+</html>

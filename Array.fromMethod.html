@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Cheat Sheet - Part_1</title>
+  </head>
+  <body>
+    <script>
+      // Without mapping function
+      let arrayLikeObject = "Hello";
+
+      // Convert the array-like object to an array using Array.from()
+      let newArray = Array.from(arrayLikeObject);
+
+      console.log(newArray); // Output: ['H', 'e', 'l', 'l', 'o']
+
+      // With mapping function
+      let set = new Set([1, 2, 3]);
+
+      // Convert the set to an array using Array.from() with a mapping function
+      let newArray1 = Array.from(set, (x) => x * 2);
+
+      console.log(newArray1); // Output: [2, 4, 6]
+    </script>
+  </body>
+</html>
