@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Cheat Sheet - Part_1</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+
+      // Removing elements starting from index 2 (cherry) onward
+      let removedFruits = fruits.splice(2);
+      console.log(removedFruits); // ['cherry', 'date', 'elderberry']
+
+      // Original array has been modified
+      console.log(fruits); // ['apple', 'banana']
+
+      // Adding elements at index 2 (replacing 0 elements)
+      fruits.splice(2, 0, "orange", "pear");
+      console.log(fruits); // ['apple', 'banana', 'orange', 'pear']
+
+      // Removing 1 element from index 1 and adding 'kiwi' in its place
+      let removedElement = fruits.splice(1, 1, "kiwi");
+      console.log(removedElement); // ["banana"];
+      console.log(fruits); //["apple", "kiwi", "orange", "pear"];
+    </script>
+  </body>
+</html>

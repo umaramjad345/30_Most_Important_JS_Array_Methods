@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Cheat Sheet - Part_1</title>
+  </head>
+  <body>
+    <script>
+      function removeFirstElementFromArray(arr) {
+        if (arr.length === 0) {
+          return undefined;
+        } else {
+          let removedElement = arr.shift();
+          return removedElement;
+        }
+      }
+
+      let numbers = [1, 2, 3, 4, 5];
+      console.log("Initial array:", numbers); // Initial array: [1, 2, 3, 4, 5]
+
+      let removedNumber = removeFirstElementFromArray(numbers);
+      console.log("Removed element:", removedNumber); // Removed element: 1
+      console.log("Modified array:", numbers); // Modified array: [2, 3, 4, 5]
+    </script>
+  </body>
+</html>

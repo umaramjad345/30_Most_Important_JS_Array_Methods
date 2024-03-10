@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Cheat Sheet - Part_1</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+
+      // Using slice() to create a new array from index 1 to 3 (excluding 3)
+      let slicedFruits = fruits.slice(1, 3);
+      console.log(slicedFruits); // ['banana', 'cherry']
+
+      console.log(fruits); // ['apple', 'banana', 'cherry', 'date', 'elderberry']
+
+      // Using slice() to create a new array from index 2 to the end
+      let slicedFruits2 = fruits.slice(2);
+      console.log(slicedFruits2); // ['cherry', 'date', 'elderberry']
+
+      let slicedFruits3 = fruits.slice(-3, -1);
+      console.log(slicedFruits3); //  ['cherry', 'date']
+
+      // Using slice() to copy the whole array
+      let copiedFruits = fruits.slice();
+      console.log(copiedFruits); //  ['apple', 'banana', 'cherry', 'date', 'elderberry']
+    </script>
+  </body>
+</html>

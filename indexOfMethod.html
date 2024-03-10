@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Cheat Sheet - Part_1</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["apple", "banana", "cherry", "banana", "date"];
+
+      // Finding the index of 'banana'
+      let bananaIndex = fruits.indexOf("banana");
+      console.log(bananaIndex); // 1
+
+      // Finding the index of 'banana' starting from index 2
+      let bananaIndex2 = fruits.indexOf("banana", 2);
+      console.log(bananaIndex2); // 3
+
+      // Finding the index of 'grape'
+      let grapeIndex = fruits.indexOf("grape");
+      console.log(grapeIndex); // -1
+    </script>
+  </body>
+</html>
